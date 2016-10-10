@@ -56,7 +56,6 @@ namespace Roadkill.Tests.Integration.WebApi
 			ApplicationSettings appSettings = new ApplicationSettings();
 			appSettings.DataStoreType = DataStoreType.SqlServer2012;
 			appSettings.ConnectionString = SqlServerSetup.ConnectionString;
-			appSettings.LoggingTypes = "none";
 			appSettings.UseBrowserCache = false;
 			Log.ConfigureLogging(appSettings);
 

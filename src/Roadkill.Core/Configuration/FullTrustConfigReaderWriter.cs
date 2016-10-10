@@ -261,8 +261,6 @@ namespace Roadkill.Core.Configuration
 			if (string.IsNullOrEmpty(dataStoreType) && !string.IsNullOrEmpty(_section.DatabaseType))
 				dataStoreType = _section.DatabaseType;
 
-			appSettings.LoggingTypes = _section.Logging;
-			appSettings.LogErrorsOnly = _section.LogErrorsOnly;
 			appSettings.DataStoreType = DataStoreType.ByName(dataStoreType);
 			appSettings.ConnectionStringName = _section.ConnectionStringName;
 			appSettings.EditorRoleName = _section.EditorRoleName;

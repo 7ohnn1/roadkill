@@ -86,12 +86,6 @@ namespace Roadkill.Core.Database.LightSpeed
 				context.IdentityMethod = IdentityMethod.GuidComb;
 				context.CascadeDeletes = true;
 
-				if (_applicationSettings.IsLoggingEnabled)
-				{
-					context.VerboseLogging = true;
-					context.Logger = new DatabaseLogger();
-				}
-
 				if (enableCache)
 					context.Cache = new CacheBroker(new DefaultCache());
 

@@ -33,7 +33,6 @@ namespace Roadkill.Tests.Integration.Repository
 			{
 				ConnectionString = ConnectionString, 
 				DataStoreType = DataStoreType,
-				LoggingTypes =  "none"
 			};
 
 			Repository = GetRepository();
